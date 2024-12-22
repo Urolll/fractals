@@ -1,1 +1,1 @@
-/home/uroll/fractal/target/wasm32-unknown-unknown/release/libfractal.rlib: /home/uroll/fractal/src/lib.rs
+/home/uroll/fractals/target/wasm32-unknown-unknown/release/libfractal.rlib: /home/uroll/fractals/src/lib.rs /home/uroll/fractals/src/mandelbrot.rs

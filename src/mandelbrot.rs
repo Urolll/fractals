@@ -1,4 +1,5 @@
 use rayon::prelude::*;
+use wasm_bindgen::prelude::*;
 
 pub struct Complex {
     real: f64,
@@ -41,6 +42,7 @@ fn mandelbrot(c: Complex, iter: u32) -> u32 {
 }
 
 // parallel computation of each pixel in mandelbrot
+#[wasm_bindgen]
 pub fn compute_mandelbrot(
     x: usize,
     y: usize,

@@ -10,9 +10,13 @@
 <body>
   <canvas id="mandelbrotCanvas" style="border: 1px solid black;"></canvas>
   <script type="module">
-    import init from './pkg/fractal.js';
+    import init, {start} from './pkg/fractal.js';
+
+    // Initialize WebAssembly module and start rendering
     init().then(() => {
-      wasm_bindgen.start();
+      start();
+    }).catch(err => {
+      console.error("Error initializing WebAssembly module:", err);
     });
   </script>
 </body>
